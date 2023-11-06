@@ -1,53 +1,53 @@
 
-тело {
-    маржа: 0;
-    семейство шрифтов: «Raleway», «без засечек»;
-    размер шрифта: 16 пикселей;
-    цвет: #ffffff;
+body {
+    margin: 0;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 16px;
+    color: #ffffff;
 
 }
 
 *,
-*:до,
-*::после {
-    размер коробки: граница-коробка;
+*:before,
+*::after {
+    box-sizing: border-box;
 }
-/* Список ===============================*/
-ли {
-    отображение: встроенный блок;
+/* Отсуствие маркеров===================================*/
+li {
+    display: inline-block;
   }
 
 
 
-а, ты {
-    текстовое оформление: нет;
+a, u {
+    text-decoration: none;
   }
 
-ч1,
-ч2,
-ч3,
-ч4,
-х5,
-ч6 {
-    маржа: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
 }
 
-п {
-    поле: 0 0 10 пикселей;
+p {
+    margin: 0 0 10px;
 }
 
-/* Контейнер ==================================*/
-.контейнер {
-    ширина: 100%;
-    максимальная ширина: 1170 пикселей;
-    маржа: 0 авто;
+/* Container===================================*/
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
-/* Контейнер ==================================*/
+/* Container===================================*/
 .container9 {
-    ширина: 100%;
-    максимальная ширина: 1170 пикселей;
-    маржа: 0 авто;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 
@@ -55,90 +55,90 @@
 
 
 
-/* Заголовок==================================*/
+/* Header===================================*/
 .header {
-    ширина: 100%;
-    высота: 100 пикселей;
-    позиция: абсолютная;
-    верх: 0;
-    слева: 0;
-    z-индекс: 1000;
-    высота: 100 пикселей;
-    цвет фона: #181818;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100px;
+    background-color: #181818;
     
 }
 
 .header__inner {
-    дисплей: гибкий;
-    оправдание-содержание: пространство между;
-    выровнять-элементы: по центру;
-    отступ: 35 пикселей 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
   
 
 }
 
-/* Nav==================================*/
+/* Nav===================================*/
 .nav {
-    дисплей: гибкий;
-    размер шрифта: 15 пикселей;
-    вес шрифта: 700;
-    преобразование текста: верхний регистр;
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
     
 }
 
 .nav__link {
-    поле слева: 20 пикселей;
-    цвет: #fff;
-    текстовое оформление: нет;
-    непрозрачность: 0,75;
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.75;
 }
 
-.nav__link:первый ребенок {
-    поле слева: 0%;
+.nav__link:first-child {
+    margin-left: 0%;
 }
 
 .nav__link:hover {
-    непрозрачность: 100;
-    оформление текста: подчеркивание;
-    цвет: #ffb13d;
-    переход: непрозрачность .1с линейная;
-    текстовое оформление: нет;
+    opacity: 100;
+    text-decoration: underline;
+    color: #ffb13d;
+    transition: opacity .1s linear;
+    text-decoration: none;
 }
 
 
-/* Р˜РЅС‚СЂРѕ РіР»Р°РІРЅРѕР№ ================================*/
-.вступление {
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    оправдание-содержание: центр;
-    высота: 900 пикселей;
-    отступ: 100 пикселей;
-    фон: URL("img/Intro/intro.JPG") центр без повтора;
-    размер фона: обложка;
-    ширина: 100%;
-    отступ: 200 пикселей 0;
+/* Интро главной ===================================*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 900px;
+    padding: 100px; 
+    background: url("img/Intro/intro.JPG") center no-repeat;
+    background-size: cover; 
+    width: 100%; 
+    padding: 200px 0;
   }
-/* Р˜РЅС‚СЂРѕ СЃС‚СЂР°РЅРёС†С‹ РђСЂС‚============================== ==*/
+/* Интро страницы Арт===================================*/
   .intro_art {
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    оправдание-содержание: центр;
-    выровнять-элементы: по центру;
-    высота: 600 пикселей;
-    отступ: 130 пикселей 0;
-    фон: url("img/intro_art/intro_art1.jpg") центр без повторения;
-    размер фона: обложка;
-    ширина: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 600px; 
+    padding: 130px 0; 
+    background: url("img/intro_art/intro_art1.jpg") center no-repeat;
+    background-size: cover; 
+    width: 100%; 
   }
   
   .intro_art .text-container {
-    выравнивание текста: по центру;
+    text-align: center; 
   }
-  /* Р”РѕР±Р°РІРёРј РјРµРґРёР°-Н·Р°РїСЂРѕСЃС‹ Р°ХР°РїС‚РёРІРЅРѕС‚Рё */
-  @media (максимальная ширина: 930 пикселей) {
+  /* Добавим медиа-запросы для адаптивности */
+  @media (max-width: 930px) {
     
-    .intro_art {
-        высота: 350 пикселей;
+    .intro_art  {
+        height: 350px; 
     }
 }
   
@@ -147,27 +147,27 @@
 
 
 
-/* Вход в систему ux========================== ======*/
-.intro_maketux ​​{
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    оправдание-содержание: центр;
-    выровнять-элементы: по центру;
-    высота: 600 пикселей;
-    отступ: 130 пикселей 0;
-    фон: url("img/Intro_maketux/intro_maketux.jpg") центр без повтора;
-    размер фона: обложка;
-    ширина: 100%;
+/* Интро страницы Макетов ux===================================*/
+.intro_maketux {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 600px; 
+    padding: 130px 0; 
+    background: url("img/Intro_maketux/intro_maketux.jpg") center no-repeat;
+    background-size: cover; 
+    width: 100%; 
   }
   
   .intro_art .text-container {
-    выравнивание текста: по центру;
+    text-align: center; 
   }
-  /* Р”РѕР±Р°РІРёРј РјРµРґРёР°-Н·Р°РїСЂРѕСЃС‹ Р°ХР°РїС‚РёРІРЅРѕС‚Рё */
-  @media (минимальная ширина: 930 пикселей) {
+  /* Добавим медиа-запросы для адаптивности */
+  @media (min-width: 930px) {
    
-    .intro_maketux ​​{
-        высота: 350 пикселей;
+    .intro_maketux {
+        height: 350px;
     }
 }
   
@@ -186,87 +186,87 @@
 
 
 
-/* Р˜РЅС‚СЂРѕ СЃС‚СЂР°РЅРёС†С‹ СЂРёСЃСѓРЅРєРѕРІ============================== "="
+/* Интро страницы рисунков===================================*/
   .intro_drawings {
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    оправдание-содержание: центр;
-    выровнять-элементы: по центру;
-    высота: 600 пикселей;
-    отступ: 130 пикселей 0;
-    фон: url("img/intro_drawings/intro_drawings1.jpg") центр без повтора;
-    размер фона: обложка;
-    ширина: 100%; /
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 600px; 
+    padding: 130px 0; 
+    background: url("img/intro_drawings/intro_drawings1.jpg") center no-repeat;
+    background-size: cover; 
+    width: 100%; /
   }
   
-  .intro_drawings .текст-контейнер {
-    выравнивание текста: по центру;
+  .intro_drawings .text-container {
+    text-align: center; 
   }
 
-  .intro_drawings .текст-контейнер {
-    выравнивание текста: по центру;
+  .intro_drawings .text-container {
+    text-align: center; 
   }
-  /* Р”РѕР±Р°РІРёРј РјРµРґРёР°-Н·Р°РїСЂРѕСЃС‹ Р°ХР°РїС‚РёРІРЅРѕС‚Рё */
-  @media (максимальная ширина: 930 пикселей) {
+  /* Добавим медиа-запросы для адаптивности */
+  @media (max-width: 930px) {
     
     .intro_drawings {
-        высота: 350 пикселей;
+        height: 350px; 
     }
 }
   
 
 
   
-/* Имя пользователя ======================== ========*/
+/* Интро страницы контакты===================================*/
 .intro_contact {
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    оправдание-содержание: центр;
-    выровнять-элементы: по центру;
-    высота: 600 пикселей;
-    отступ: 130 пикселей 0;
-    фон: url("img/intro_contact/intro_contact1.jpg") центр без повтора;
-    размер фона: обложка;
-    ширина: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 600px; 
+    padding: 130px 0; 
+    background: url("img/intro_contact/intro_contact1.jpg") center no-repeat;
+    background-size: cover; 
+    width: 100%; 
   }
   
  
-  .intro_contact .текст-контейнер {
-    выравнивание текста: по центру;
+  .intro_contact .text-container {
+    text-align: center; 
   }
-  /* Р”РѕР±Р°РІРёРј РјРµРґРёР°-Н·Р°РїСЂРѕСЃС‹ Р°ХР°РїС‚РёРІРЅРѕС‚Рё */
-  @media (максимальная ширина: 930 пикселей) {
+  /* Добавим медиа-запросы для адаптивности */
+  @media (max-width: 930px) {
     
-    .intro_contact {
-        высота: 350 пикселей;
+    .intro_contact  {
+        height: 350px; 
     }
 }
   
 
 
-/* Р˜РЅС‚СЂРѕ СЃС‚СЂР°РЅРёС†С‹ 3Р”============================== ==*/
+/* Интро страницы 3Д===================================*/
 .intro_3d {
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    оправдание-содержание: центр;
-    выровнять-элементы: по центру;
-    высота: 600 пикселей;
-    отступ: 130 пикселей 0;
-    фон: url("img/intro_3d/intro_3d.jpg") центр без повторения;
-    размер фона: обложка;
-    ширина: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 600px; 
+    padding: 130px 0; 
+    background: url("img/intro_3d/intro_3d.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%; 
   }
   
-  .intro_contact .текст-контейнер {
-    выравнивание текста: по центру;
+  .intro_contact .text-container {
+    text-align: center; 
   }
 
 
-  /* Р”РѕР±Р°РІРёРј РјРµРґРёР°-Н·Р°РїСЂРѕСЃС‹ Р°ХР°РїС‚РёРІРЅРѕС‚Рё */
-  @media (максимальная ширина: 930 пикселей) {
+  /* Добавим медиа-запросы для адаптивности */
+  @media (max-width: 930px) {
     
     .intro_3d {
-        высота: 350 пикселей;
+        height: 350px; 
     }
 }
   
@@ -275,21 +275,21 @@
   
   
 
-/* Р˜РЅС‚СЂРѕ СЃС‚СЂР°РЅРёС†С‹ СЂРёСЃСѓРЅРєРѕРІ============================== "="
+/* Интро страницы рисунков===================================*/
 .intro_news1 {
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    оправдание-содержание: центр;
-    выровнять-элементы: по центру;
-    высота: 250 пикселей;
-    отступ: 130 пикселей 0;
-    фон: url("img/intro_news1/intro_news1.png") центр без повтора;
-    размер фона: обложка;
-    ширина: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 250px; 
+    padding: 130px 0; 
+    background: url("img/intro_news1/intro_news1.png") center no-repeat;
+    background-size: cover; 
+    width: 100%; 
   }
   
   .intro_news1 .text-container {
-    выравнивание текста: по центру;
+    text-align: center; 
   }
 
 
@@ -299,54 +299,54 @@
 
 
 
-/* Р˜РЅС‚СЂРѕ СЃС‚СЂР°РЅРёС†С‹ Р'Р»РѕРі ============================ ===== */
+/* Интро страницы Блог =================================== */
 .intro_blog {
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    оправдание-содержание: центр;
-    выровнять-элементы: по центру;
-    высота: 600 пикселей;
-    отступ: 130 пикселей 0;
-    фон: url("img/intro_3d/intro_3d.jpg") центр без повторения;
-    размер фона: обложка;
-    ширина: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    padding: 130px 0;
+    background: url("img/intro_3d/intro_3d.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
 .intro_blog .container {
-    выравнивание текста: по центру;
+    text-align: center;
 }
 
 
-  /* Р”РѕР±Р°РІРёРј РјРµРґРёР°-Н·Р°РїСЂРѕСЃС‹ Р°ХР°РїС‚РёРІРЅРѕС‚Рё */
-  @media (максимальная ширина: 930 пикселей) {
+  /* Добавим медиа-запросы для адаптивности */
+  @media (max-width: 930px) {
     
-    .intro_blog {
-        высота: 350 пикселей;
+    .intro_blog  {
+        height: 350px; 
     }
 }
   
 
 
-/* Р˜РЅС‚СЂРѕ СЃС‚СЂР°РЅРёС†С‹ UX =============================== "="
+/* Интро страницы UX =================================== */
 .intro_ux {
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    оправдание-содержание: центр;
-    выровнять-элементы: по центру;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
-    отступ: 130 пикселей 0;
-    фон: url("img/intro_3d/intro_3d.jpg") центр без повторения;
-    размер фона: обложка;
-    ширина: 100%;
+    padding: 130px 0;
+    background: url("img/intro_3d/intro_3d.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 .intro_art .text-container {
-    выравнивание текста: по центру;
+    text-align: center; 
   }
-  /* Р”РѕР±Р°РІРёРј РјРµРґРёР°-Н·Р°РїСЂРѕСЃС‹ Р°ХР°РїС‚РёРІРЅРѕС‚Рё */
-  @media (максимальная ширина: 930 пикселей) {
+  /* Добавим медиа-запросы для адаптивности */
+  @media (max-width: 930px) {
     
     .intro_ux1 {
-        высота: 350 пикселей;
+        height: 350px; 
     }
 }
   
@@ -354,15 +354,15 @@
   
 
 .intro_blog .container {
-    выравнивание текста: по центру;
+    text-align: center;
 }
 
 
-  /* Р”РѕР±Р°РІРёРј РјРµРґРёР°-Н·Р°РїСЂРѕСЃС‹ Р°ХР°РїС‚РёРІРЅРѕС‚Рё */
-  @media (максимальная ширина: 930 пикселей) {
+  /* Добавим медиа-запросы для адаптивности */
+  @media (max-width: 930px) {
     
-    .intro_maketux ​​{
-        высота: 350 пикселей;
+    .intro_maketux  {
+        height: 350px; 
     }
 }
   
@@ -370,42 +370,42 @@
 
 
 
-/* Р˜РЅС‚СЂРѕ СЃС‚СЂР°РЅРёС†С‹ Р'Р»РѕРі ============================ ===== */
+/* Интро страницы Блог =================================== */
 .intro_ux1 {
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    оправдание-содержание: центр;
-    выровнять-элементы: по центру;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
-    отступ: 130 пикселей 0;
-    фон: url("img/intro_uxwebsite1\ СЌРєРё\ РґРѕСЃ/intro_drawings1.jpg") center no-repeat;
-    размер фона: обложка;
-    ширина: 100%;
+    padding: 130px 0;
+    background: url("img/intro_uxwebsite1\ эки\ дос/intro_drawings1.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
 }
-/* Р”Р°Р°РїС‚РёРІРЅРѕС‚Рё-Н·Р°РїСЂРѕСЃС‹ Р°ХР°РїС‚РёРІРЅРѕС‚Рё */
-@media (минимальная ширина: 930 пикселей) {
+/* Добавим медиа-запросы для адаптивности */
+@media (min-width: 930px) {
    
     .intro_ux1 {
-        высота: 350 пикселей;
+        height: 350px; 
     }
 }
 
 
 
-   /* Р'РёРѕРіСЂР°С„РёСЏ РЅР° РіР»Р°РІРЅРѕР№ "РћР±Рѕ РјРЅРµ"========================= ========*/
+   /* Биография на главной "Обо мне"===================================*/
 
-  .биография {
+  .biography {
     
-    размер шрифта: 16 пикселей;
-    черный цвет;
-    семейство шрифтов: «Робото», без засечек;
+    font-size: 16px;
+    color: black; 
+    font-family: 'Roboto', sans-serif; 
     
-    /* Р”СЂСѓРіРёРµ СЃРІРѕР№СЃС‚РІР°, РµСЃР»Рё РЅРµР±С…РѕРґРёРјРѕ */
-    ширина: 100%;
-    маржа: 0 авто;
-    ширина: 100%;
-    максимальная ширина: 1170 пикселей;
-    маржа: 0 авто;
+    /* Другие свойства, если необходимо */
+    width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
     
 
   }
@@ -413,26 +413,26 @@
   
   
 
-  .биография2 {
+  .biography2 {
     
-    размер шрифта: 16 пикселей;
-    черный цвет;
-    семейство шрифтов: «Робото», без засечек;
+    font-size: 16px; 
+    color: black;
+    font-family: 'Roboto', sans-serif; 
     
-    /* Р”СЂСѓРіРёРµ СЃРІРѕР№СЃС‚РІР°, РµСЃР»Рё РЅРµР±С…РѕРґРёРјРѕ */
-    ширина: 100%;
-    маржа: 0 авто;
-    ширина: 100%;
-    максимальная ширина: 1170 пикселей;
-    маржа: 0 авто;
-    отступ: 10 пикселей 10 пикселей 10 пикселей;
+    /* Другие свойства, если необходимо */
+    width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 10px 10px 10px;
     
     
 
   }
-  .отступы-изображение-слево img{
-    плыть налево;
-    отступ: 0 18 пикселей 18 пикселей 0;
+  .otstupy-izobrazheniye-slevo img {
+    float: left;
+    padding: 0 18px 18px 0;
     }
 
 
@@ -440,353 +440,353 @@
 
 
 
-/* Вход в систему… */
-.навыки {
-    выравнивание текста: по правому краю;
-    отступ справа: 20 пикселей;
-    высота строки: 40 пикселей;
-    белый цвет;
+/* Мои скилы в программах */
+.skills {
+    text-align: right; 
+    padding-right: 20px; 
+    line-height: 40px; 
+    color: white; 
 }
 
-/* РљР°Р¶РґС‹Р№ РЅР°РІС‹Рє СЃРѕ СЃРІРѕРјРё СЃС‚РёР»СЏРјРё Р°Р°РєСЂСѓРіР»РμРЅРЅС‹РјРё СѓР»Р°Р јЁ */
+/* Каждый навык со своими стилями и закругленными углами */
 .html {
-    ширина: 90%;
-    цвет фона: #1f1f1f;
-    радиус границы: 20 пикселей;
+    width: 90%;
+    background-color: #1f1f1f; 
+    border-radius: 20px; 
 }
 
 .css {
-    ширина: 80%;
-    цвет фона: #1f1f1f;
-    радиус границы: 20 пикселей;
+    width: 80%;
+    background-color: #1f1f1f;
+    border-radius: 20px; 
 }
 
 .js {
-    ширина: 70%;
-    цвет фона: #303030;
-    радиус границы: 20 пикселей;
+    width: 70%;
+    background-color: #303030;
+    border-radius: 20px; 
 }
 
 .php {
-    ширина: 60%;
-    цвет фона: #303030;
-    радиус границы: 20 пикселей;
+    width: 60%;
+    background-color: #303030; 
+    border-radius: 20px; 
 }
   
   
 
 
 
-/* РџСЂСЏјРѕСѓРіРѕР»СЊРЅРёРє=======================================*/
+/* Прямоугольник===================================*/
 .intro_inner {
-    ширина: 100%;
-    максимальная ширина: 970 пикселей;
-    маржа: 0 авто;
-    выравнивание текста: по центру;
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
 }
  
 .intro_title {
-    поле: 0 0 30 пикселей;
-    семейство шрифтов: «Open Sans», Sans-serif;
-    размер шрифта: 30 пикселей;
-    высота строки: 1,1;
-    цвет: #fff;
-    вес шрифта: 700;
-    преобразование текста: верхний регистр;
-    выравнивание текста: по центру;
+    margin: 0 0 30px;
+    font-family: 'Open Sans', Sans-serif;
+    font-size: 30px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
     
 }
 
 
-/* Кнопка=================================*/
+/* Button===================================*/
 .btn {
-    отображение: встроенный блок;
-    фон: #ffb13d;
-    цвет: RGB(43, 43, 43);
-    отступ: 1рем 1,1рем;
-    текстовое оформление: нет;
-    радиус границы: 4 пикселя;
-    текстовое оформление: нет;
+    display: inline-block;
+    background: #ffb13d;
+    color: rgb(43, 43, 43);
+    padding: 1rem 1.1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    text-decoration: none;
 
 
     
 }
 
 
-/* Feature==================================*/
-.функции {
-    дисплей: гибкий;
-    flex-wrap: обертка;
-    поле: 100 пикселей 0;
+/* Feature===================================*/
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0;
 }
 
 .features_item {
-    отступ: 0 20 пикселей;
-    ширина: 33,33333%;
-    поле: 25 пикселей 0;
+    padding: 0 20px;
+    width: 33.33333%;
+    margin:25px 0 ;
 
-    выравнивание текста: по центру;
-    цвет: #000;
+    text-align: center;
+    color: #000; 
 }
 
 .features_icon{
-    поле внизу: 25 пикселей;
+    margin-bottom: 25px;
 
 }
 
 .features_title{
-    поле внизу: 20 пикселей;
-    размер шрифта: 14 пикселей;
-    цвет: #2d3033;
-    вес шрифта: 700;
-    текст-трансформация: верхний регистр;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color:  #2d3033;
+    font-weight: 700;
+    text-transform:uppercase ;
  
 }
  
 .features_text{
-     размер шрифта: 14 пикселей;
-     высота строки: 1,5;
-     цвет: #6c7279
+     font-size:14px;
+     line-height: 1.5;
+     color: #6c7279
 
 }
 
-/* Р”Р°РІРёРј РјРµХА-Н·Р°РїСЂРѕСЃ Р'РћРљРђ */
-.охватывать {
-    поле: 0 0 пикселей 30 пикселей;
-    поле сверху: 30 пикселей;
-    семейство шрифтов: «Open Sans», Sans-serif;
-    размер шрифта: 100 пикселей;
-    высота строки: 1,1;
-    цвет: #fff;
-    вес шрифта: 700;
-    преобразование текста: верхний регистр;
-    выравнивание текста: по центру;
-    ширина: 100%;
-    максимальная ширина: 1170 пикселей;
-    маржа: 0 авто;
+/* Добавим медиа-запрос БЛОКА */
+.span {
+    margin: 0 0px 30px;
+    margin-top: 30px;
+    font-family: 'Open Sans', Sans-serif;
+    font-size: 100px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
-/* Р”Р°Р°РЁРј РјРµРґРёР°-Н·Р°Р°СЂРѕСЏ Р°РґР°РїС‚РёРІРЅРѕС‚Рё */
-@media (максимальная ширина: 930 пикселей) {
-    .охватывать {
-        размер шрифта: 50 пикселей;
+/* Добавим медиа-запрос для адаптивности */
+@media (max-width: 930px) {
+    .span {
+        font-size: 50px; 
     }
 }
 
 
 
 .span2 {
-    поле: 0 0 30 пикселей;
-    поле сверху: 30 пикселей;
-    семейство шрифтов: «Open Sans», Sans-serif;
-    размер шрифта: 50 пикселей;
-    высота строки: 1,1;
-    цвет: #111111;
-    вес шрифта: 700;
-    преобразование текста: верхний регистр;
-    выравнивание текста: по центру;
+    margin: 0 0 30px;
+    margin-top: 30px;
+    font-family: 'Open Sans', Sans-serif;
+    font-size: 50px;
+    line-height: 1.1;
+    color: #111111;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
   }
   
  
-/* Изображение-изображение размера 320px */
-@media (макс. ширина: 320 пикселей) {
+/* Медиа-запрос для экранов меньше 320px */
+@media (max-width: 320px) {
     .span2 {
-      маржа сверху: 50 пикселей;
-      поле внизу: 50 пикселей;
+      margin-top: 50px; 
+      margin-bottom: 50px; 
     }
   }
   
-  /* Размер-Нет размера 320px и размер 375px */
-  @media (минимальная ширина: 321 пикселей) и (максимальная ширина: 375 пикселей) {
+  /* Медиа-запрос для экранов шире 320px и меньше 375px */
+  @media (min-width: 321px) and (max-width: 375px) {
     .span2 {
-      поле сверху: 60 пикселей;
-      поле внизу: 60 пикселей;
+      margin-top: 60px; 
+      margin-bottom: 60px; 
     }
   }
 
     
-  /* Размер-Нет размера 360px и размер 740px */
-  @media (минимальная ширина: 360 пикселей) и (максимальная ширина: 740 пикселей) {
+  /* Медиа-запрос для экранов шире 360px и меньше 740px */
+  @media (min-width: 360px) and (max-width: 740px) {
     .span2 {
-      поле сверху: 60 пикселей;
-      поле внизу: 60 пикселей;
+      margin-top: 60px; 
+      margin-bottom: 60px; 
     }
   }
   
   
-  /* Размер-Нет размера 375px и размер 414px */
-  @media (минимальная ширина: 376 пикселей) и (максимальная ширина: 414 пикселей) {
+  /* Медиа-запрос для экранов шире 375px и меньше 414px */
+  @media (min-width: 376px) and (max-width: 414px) {
     .span2 {
-      маржа сверху: 70 пикселей;
-      поле внизу: 70 пикселей;
+      margin-top: 70px; 
+      margin-bottom: 70px; 
     }
   }
 
 
 
 .intro_title1 {
-    поле: 0 0 30 пикселей;
-    семейство шрифтов: «Open Sans», Sans-serif;
-    размер шрифта: 30 пикселей;
-    высота строки: 1,1;
-    цвет: RGB(0, 0, 0);
-    вес шрифта: 700;
-    преобразование текста: верхний регистр;
-    выравнивание текста: по центру;
+    margin: 0 0 30px;
+    font-family: 'Open Sans', Sans-serif;
+    font-size: 30px;
+    line-height: 1.1;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
 
 
 }
 
 
 
-/* Проекты РїР°С‚РμРіРѕСЂРёСЏРј */
+/* Projects по категориям */
 
-.проекты {
-    дисплей: гибкий;
-    оправдание-содержание: центр;
-    flex-wrap: обертка;
-    разрыв столбца: 10 пикселей;
-    разрыв между строками: 30 пикселей;
-    отступ: 20 пикселей 20 пикселей;
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 30px;
+    padding: 20px 20px;
 }
-@media (макс. ширина: 600 пикселей) {
-    .проекты {
-        гибкое направление: столбец; /* РЎС‚РѕР»Р±С†С‹ РґР»СЏ РјРѕР±Р»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІ */
-        отступ: 10 пикселей; /* РЈРјРµРЅСЊС€РёС‚Рµ РѕС‚СЃС‚СѓРїС‹ РїРѕ Р±Р°Р°Рј */
+@media (max-width: 600px) {
+    .projects {
+        flex-direction: column; /* Столбцы для мобильных устройств */
+        padding: 10px; /* Уменьшите отступы по бокам */
     }
 
-    .проект {
-        маржа: 0 авто; /* Р'С‹СЂРІРЅСЏС‚СЊ РїРѕ С†РµРЅС‚СЂСѓ */
-        ширина: 100%; /* РЈСЃС‚Р°РЅРѕРІРёС‚Рµ С€РёСЂРёРЅСѓ РїРѕ РІР°С€РµРјСѓ СѓСЃРјРѕС‚СЂРµРЅРёСЋ */
+    .project {
+        margin: 0 auto; /* Выровнять по центру */
+        width: 100%; /* Установите ширину по вашему усмотрению */
     }
 }
-.проект {
-    максимальная ширина: 350 пикселей;
-    цвет фона: var (--project-card-bg);
-    коробка-тень: вар (--box-shadow);
-    радиус границы: 10 пикселей;
-    поле: 0 5 пикселей;
+.project {
+    max-width: 350px;
+    background-color: var(--project-card-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    margin: 0 5px; 
     box-shadow: 0px 2px 4px rgba(5, 5, 5, 0.2);
    
-    переход: box-shadow 0,5 с;
+    transition: box-shadow 0.5s;
     
 }
 
 
 
 .project:hover {
-    /* С‚РµРЅСЊ РїСЂРё РЅР°РІРµРґРµРЅРёРё */
+    /* тень при наведении */
     box-shadow: 0px 6px 15px rgba(5, 5, 5, 0.2);
 }
 
 .project__img1 {
-    радиус границы: 15 пикселей;
-    дисплей: блок;
-    маржа: 0 авто;
-    поле-верх: 0 пикселей;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0px;
 }
 
 
 
 
-.Название Проекта {
-    отступы: 15 пикселей, 20 пикселей, 25 пикселей;
-    вес шрифта: 700;
-    размер шрифта: 24 пикселей;
-    высота строки: 1,3;
-    цвет: var (--project-card-text);
-    выравнивание текста: по центру;
-    цвет: #000000;
-    текстовое оформление: нет;
-    маржа сверху: 10 пикселей;
-    нижнее поле: 10 пикселей;
-    дисплей: гибкий;
-    оправдание-содержание: центр;
-    flex-wrap: обертка;
-    разрыв столбца: 10 пикселей;
-    разрыв между строками: 10 пикселей;
+.project__title {
+    padding: 15px 20px 25px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+    color: var(--project-card-text);
+    text-align: center;
+    color: #000000; 
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
 .project__title:hover {
-    цвет: #ffb62f;
-    оформление текста: нет !important;
+    color: #ffb62f; 
+    text-decoration: none !important; 
 }
-/* Детали проекта */
+/* Project details */
 
-.Детали проекта {
-    маржа: 0 авто;
-    максимальная ширина: 865 пикселей;
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    выровнять-элементы: по центру;
-    выравнивание текста: по центру;
+.project-details {
+    margin: 0 auto;
+    max-width: 865px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .project-details__cover {
-    максимальная ширина: 100%;
-    поле внизу: 40 пикселей;
-    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0,25);
-    радиус границы: 50 пикселей;
-    ширина: 60 ​​пикселей;
+    max-width: 100%;
+    margin-bottom: 40px;
+    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    width: 60px;
 }
 
 .project-details__desc {
-    поле внизу: 30 пикселей;
-    вес шрифта: 700;
-    размер шрифта: 24 пикселей;
-    высота строки: 1,3;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
 }
 
-/* Список содержимого */
-.content-список {
-    маржа: 0 авто;
-    максимальная ширина: 570 пикселей;
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    выровнять-элементы: по центру;
-    разрыв между строками: 40 пикселей;
-    выравнивание текста: по центру;
+/* Content list */
+.content-list {
+    margin: 0 auto;
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    text-align: center;
 }
 
-.content-list а {
-    цвет: var(--accent);
+.content-list a {
+    color: var(--accent);
 }
 
 .content-list__item {
-    размер шрифта: 18 пикселей;
-    высота строки: 1,5;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .content-list__item p + p {
-    маржа-верх: 0,5em;
+    margin-top: 0.5em;
 }
 
 
 
 
-/* РќРѕРІРѕСЃС‚РЅРѕР№ Р±Р»РѕРє */
-.предмет новостей {
-    дисплей: гибкий;
-    выровнять-элементы: гибкий старт;
-    поле внизу: 20 пикселей;
-    цвет фона: #fff;
-    радиус границы: 10 пикселей;
+/* Новостной блок */
+.news-item {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 20px; 
+    background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    отступ: 20 пикселей;
+    padding: 20px;
 }
-/* Р”Р°Р°РїС‚РёРІРЅРѕС‚Рё-Н·Р°РїСЂРѕСЃС‹ Р°ХР°РїС‚РёРІРЅРѕС‚Рё */
-@media (макс. ширина: 500 пикселей) {
+/* Добавим медиа-запросы для адаптивности */
+@media (max-width: 500px) {
   
     .news-content {
-        дисплей: блок;
-        отступ: 10 пикселей;
+        display: block; 
+        padding: 10px; 
     }
 }
-@media (макс. ширина: 500 пикселей) {
-    /* Размер файла 768px */
+@media (max-width: 500px) {
+    /* Изменение стилей для блока при ширине экрана менее 768px */
     .news-content2 {
-        дисплей: блок;
-        отступ: 10 пикселей;
+        display: block; 
+        padding: 10px;
     }
 }
 
@@ -796,64 +796,64 @@
 
 
 .news-item .project__img {
-    радиус границы: 15 пикселей;
-    поле справа: 20 пикселей;
-    максимальная ширина: 200 пикселей;
+    border-radius: 15px;
+    margin-right: 20px;
+    max-width: 200px; 
 }
 
 .news-item .news-content {
-    гибкий: 1;
-    поле слева: 10 пикселей;
+    flex: 1;
+    margin-left: 10px; 
 }
 
 .news-item .project__title2 {
-    вес шрифта: 700;
-    размер шрифта: 24 пикселей;
-    высота строки: 1,3;
-    нижнее поле: 10 пикселей;
-    текстовое оформление: нет;
-    цвет: #000000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #000000;
 }
 
 .news-item .news-text {
-    вес шрифта: 400;
-    размер шрифта: 16 пикселей;
-    высота строки: 1,5;
-    цвет: #000000;
-    нижнее поле: 10 пикселей;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 10px; 
 }
 
 .news-item .read-more-button {
-    цвет фона: #000;
-    цвет: #fff;
-    отступ: 10 пикселей 20 пикселей;
-    граница: нет;
-    радиус границы: 5 пикселей;
-    курсор: указатель;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .news-item .read-more-button:hover {
-    цвет фона: #252525;
+    background-color: #252525; 
 }
 
 
-/* Применяем стили для экранов с максимальной шириной 900 пикселей */
-@media (максимальная ширина: 900 пикселей) {
-    .предмет новостей {
-        гибкое направление: столбец;
-        выровнять-элементы: гибкий старт;
+/* Apply styles for screens with a maximum width of 900px */
+@media (max-width: 900px) {
+    .news-item {
+        flex-direction: column;
+        align-items: flex-start; 
     
         }
-        .предмет новостей {
-            выровнять-элементы: по центру;
+        .news-item {
+            align-items: center; 
         }
     }
 
 
 
     .news-item .project__img {
-        нижнее поле: 10 пикселей;
-        поле справа: 0;
+        margin-bottom: 10px; 
+        margin-right: 0;
     }
 
 
@@ -864,50 +864,50 @@
 
 
 
-/* ящик с uxweb */
+/* box с тенью для uxweb */
 .ux {
-    дисплей: гибкий;
-    выровнять-элементы: гибкий старт;
-    поле внизу: 20 пикселей;
-    цвет фона: #fff;
-    радиус границы: 10 пикселей;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    отступ: 25 пикселей;
-    максимальная ширина: 100%;
-    высота: авто;
+    padding: 25px;
+    max-width: 100%; 
+    height: auto; 
 }
 .ux.project__img {
-    радиус границы: 10 пикселей;
-    поле справа: 10 пикселей;
-    максимальная ширина: 1100 пикселей;
-    дисплей: гибкий;
-    выровнять-элементы: гибкий старт;
-    отступ: 25 пикселей;
+    border-radius: 10px;
+    margin-right: 10px; 
+    max-width: 1100px;
+    display: flex;
+    align-items: flex-start; 
+    padding: 25px;
     
-    максимальная ширина: 100%;
-    высота: авто;
+    max-width: 100%;
+    height: auto;
 }
 
 .ux .news-content {
-    гибкий: 1;
-    поле слева: 10 пикселей;
+    flex: 1;
+    margin-left: 10px; 
 }
 
 .ux .project__title2 {
-    вес шрифта: 700;
-    размер шрифта: 24 пикселей;
-    высота строки: 1,3;
-    нижнее поле: 10 пикселей;
-    текстовое оформление: нет;
-    цвет: #000000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #000000;
 }
 
-.ux .news-текст {
-    вес шрифта: 400;
-    размер шрифта: 16 пикселей;
-    высота строки: 1,5;
-    цвет: #000000;
-    нижнее поле: 10 пикселей;
+.ux .news-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 10px; 
 }
 
 
@@ -920,280 +920,280 @@
 
 
 
-/* Список содержимого */
+/* Content list */
 
 .content-list2 {
-    маржа: 0 авто;
-    максимальная ширина: 570 пикселей;
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    выровнять-элементы: по центру;
-    разрыв между строками: 40 пикселей;
-    выравнивание текста: по центру;
+    margin: 0 auto;
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    text-align: center;
     
 }
 
-.content-list2 а {
-    цвет: var(--accent);
+.content-list2 a {
+    color: var(--accent);
 }
 
 .content-list__item2 {
-    размер шрифта: 18 пикселей;
-    высота строки: 1,5;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .content-list__item2 p + p {
-    маржа-верх: 0,5em;
+    margin-top: 0.5em;
 }
 
 
 
-/* Контакты*/
+/* Contacts*/
 
-/* Контакты*/
+/* Contacts*/
 
-тело5 {
-    семейство шрифтов: Arial, без засечек;
-    дисплей: гибкий;
-    оправдание-содержание: центр;
-    выровнять-элементы: по центру;
-    высота: 100вх;
-    маржа: 0;
-    цвет фона: #ffffff;
+body5 {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
 }
 
 .container5 {
-    ширина: 70%;
-    максимальная ширина: 1170 пикселей;
-    маржа: 0 авто; /* Р¦РµРЅС‚СЂРёСЂРѕРІР°РЅРёРµ РєРѕРЅС‚РµР№РЅРµСЂР° */
-    отступ: 30 пикселей;
-    цвет фона: #fff;
-    радиус границы: 10 пикселей;
+    width: 70%;
+    max-width: 1170px;
+    margin: 0 auto; /* Центрирование контейнера */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .container5 h2 {
-    выравнивание текста: по центру;
-    поле внизу: 20 пикселей;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-метка .contact-form {
-    дисплей: блок;
-    поле внизу: 5 пикселей;
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-ввод контактной формы,
+.contact-form input, 
 .contact-form textarea {
-    ширина: расчет (100 % – 20 пикселей); /* РЈС‡РёС‚С‹РІР°РµРѕС‚СЃС‚СѓРїС‹ */
-    отступ: 10 пикселей;
-    поле внизу: 15 пикселей;
-    граница: 1 пиксель, сплошная #ccc;
-    радиус границы: 5 пикселей;
-    дисплей: блок;
-    размер коробки: граница-коробка; /* Связанные файлы ‚Р° */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Снимок */
+    width: calc(100% - 20px); /* Учитываем отступы */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box; /* Учитываем отступы и границы в общей ширине элемента */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Воздушные тени */
 }
 
-кнопка .contact-form {
-    отступ: 10 пикселей 20 пикселей;
-    граница: нет;
-    радиус границы: 5 пикселей;
-    цвет фона: #0f0f0f;
-    цвет: #fff;
-    размер шрифта: 16 пикселей;
-    курсор: указатель;
-    дисплей: блок;
-    ширина: 100%; /* Р°РЅРјР°РµС‚ РІСЃСЋ РґРѕСЃС‚СѓРїРЅСѓСЋ С€РёСЂРёРЅСѓ */
+.contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0f0f0f;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 100%; /* Занимает всю доступную ширину */
 }
 
-Кнопка .contact-form:hover {
-    цвет фона: #333333;
+.contact-form button:hover {
+    background-color: #333333;
 }
 
 
-/* Добавляем стили для значков социальных сетей */
-.social-значки {
-    дисплей: гибкий;
-    оправдание-содержание: гибкий старт;
-    поле внизу: 20 пикселей;
+/* Add styles for the social icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
 }
 
-.social-icons а {
-    размер шрифта: 24 пикселей;
-    поле справа: 10 пикселей;
-    цвет: #000; /* Отрегулируйте цвет по мере необходимости */
-    текстовое оформление: нет;
-}
-
-.social-icons a:hover {
-    цвет: #ffd13a; /* Светло-серый при наведении */
-}
-
-/* Добавляем стили для значков социальных сетей */
-.social-значки {
-    дисплей: гибкий;
-    оправдание-содержание: гибкий старт;
-    поле внизу: 20 пикселей;
-}
-
-.social-icons а {
-    размер шрифта: 24 пикселей;
-    поле справа: 10 пикселей;
-    цвет: #000;
-    текстовое оформление: нет;
+.social-icons a {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #000; /* Adjust the color as needed */
+    text-decoration: none;
 }
 
 .social-icons a:hover {
-    цвет: #ffd13a;
+    color: #ffd13a; /* Light gray on hover */
+}
+
+/* Add styles for the social icons */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #000; 
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ffd13a; 
 }
 
 
-/* Р'РёРѕРіСЂР°С„РёСЏ "Можно" */
+/* Биография "Обо мне" */
 .news-item2 {
-    дисплей: гибкий;
-    выровнять-элементы: гибкий старт;
-    поле внизу: 20 пикселей;
-    цвет фона: #fff;
-    радиус границы: 10 пикселей;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px; 
+    background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    отступ: 20 пикселей;
+    padding: 20px;
 }
 
 .news-item2 .project__img2 {
-    радиус границы: 15 пикселей;
-    поле справа: 20 пикселей;
-    максимальная ширина: 200 пикселей;
+    border-radius: 15px;
+    margin-right: 20px; 
+    max-width: 200px; 
 }
 
 .news-item2 .news-content2 {
-    гибкий: 1;
-    поле слева: 10 пикселей;
+    flex: 1;
+    margin-left: 10px; 
 }
 
 .news-item2 .project__title2 {
-    вес шрифта: 700;
-    размер шрифта: 24 пикселей;
-    высота строки: 1,3;
-    нижнее поле: 10 пикселей;
-    текстовое оформление: нет;
-    цвет: #000000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #000000;
 }
 
 .news-item2 .news-text2 {
-    вес шрифта: 400;
-    размер шрифта: 16 пикселей;
-    высота строки: 1,5;
-    цвет: #000000;
-    нижнее поле: 10 пикселей;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 10px;
 }
 
 .news-item2 .read-more-button {
-    цвет фона: #000;
-    цвет: #fff;
-    отступ: 10 пикселей 20 пикселей;
-    граница: нет;
-    радиус границы: 5 пикселей;
-    курсор: указатель;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .news-item2 .read-more-button:hover {
-    цвет фона: #252525;
+    background-color: #252525; 
 }
 
 
-/* Р”Р°Р°РЁРј РјРµРґРёР°-Н·Р°Р°СЂРѕСЏ Р°РґР°РїС‚РёРІРЅРѕС‚Рё */
+/* Добавим медиа-запрос для адаптивности */
 
 
 
-/* РњРµХР°-НР°РїСЂРѕСЃ РґР»СЏ РјРѕР±РёР»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІ */
-@media (максимальная ширина: 700 пикселей) {
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 700px) {
     .news-item2 .project__title2 {
-        размер шрифта: 30 пикселей; /* Р°Р·РјРµСЂ СЪСЂРёСЄС‚Р° РґР»СЏ РјРѕР±Р»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІ */
+        font-size: 30px; /* Размер шрифта для мобильных устройств */
     }
 
     .news-item2 .news-text2 {
-        размер шрифта: 30 пикселей; /* Р°Р·РјРµСЂ СЪСЂРёСЄС‚Р° РґР»СЏ РјРѕР±Р»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІ */
+        font-size: 30px; /* Размер шрифта для мобильных устройств */
     }
 }
 
 
 
 
-/* РќРѕРІРѕСЃС‚СЊ 1 РІ Р'РѕРіРμ */
+/* Новость 1 в Блоге */
 
     .header {
-        выравнивание текста: по центру;
-        преобразование текста: верхний регистр;
-        черный цвет;
-        размер шрифта: 16 пикселей;
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+        font-size: 16px;
       }
       
-      .текст {
-        черный цвет;
-        размер шрифта: 16 пикселей;
+      .text {
+        color: black;
+        font-size: 16px;
       }
 
     
     
-      ч3 {
-        черный цвет;
+      h3 {
+        color: black; 
       }
  
 
 
 
 
-/* Добавлены социальные иконки */
-.social-значки {
-    дисплей: гибкий;
-    оправдание-содержание: центр;
-    поле внизу: 20 пикселей;
+/* Отступ для social-icons */
+.social-icons {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px;
 }
 
-.social-icons а {
-    размер шрифта: 24 пикселей;
-    поле: 0 5 пикселей;
-    цвет: #000;
-    текстовое оформление: нет;
+.social-icons a {
+    font-size: 24px;
+    margin: 0 5px; 
+    color: #000;
+    text-decoration: none;
 }
 
 .social-icons a:hover {
-    цвет: #ffd13a;
+    color: #ffd13a;
 }
 
 
-/* Делаем ссылки прозрачными */
-.биография а {
-    непрозрачность: 0,3;
-    переход: непрозрачность 0,3 с, легкость;
+/* Make the links transparent */
+.biography a {
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
 }
 
-/* Изменение непрозрачности при наведении */
+/* Change the opacity on hover */
 .biography a:hover {
-    непрозрачность: 1;
+    opacity: 1;
 }
 
 
 
 
-/* Оформление ссылок */
-.биография а {
-    цвет: #8f8f8f;
-    переход: цвет, легкость 0,3 с;
+/* Style the links */
+.biography a {
+    color: #8f8f8f; 
+    transition: color 0.3s ease;
 }
 
-/* Изменение цвета при наведении */
+/* Change the color on hover */
 .biography a:hover {
-    цвет: RGB(255, 195, 82);
+    color: rgb(255, 195, 82); 
 }
 
-/* Остальные стили CSS... */
+/* Rest of your CSS styles... */
 
 
-/* РњРµРґР°-Р°Р°Р°Р'СЏ Р°РґР°РїС‚Р°С†РёРё СЃС‚РёР»РµР№ РЅР° РјР°Р»РµРЅСЊРєРёС… СЌРєСЂР°Р°С … (Можно ‹Рµ СѓСЃС‚СЂРѕР№СЃС‚РІР°) */
-@media (максимальная ширина: 767 пикселей) {
+/* Медиа-запрос для адаптации стилей на маленьких экранах (мобильные устройства) */
+@media (max-width: 767px) {
     .container5 {
-        ширина: 90%;
+        width: 90%;
     }
 }
 
@@ -1215,14 +1215,14 @@
 
 
 
-/* Краткая информация */
+/* Картинка биографии */
 .project__img1 {
-    максимальная ширина: 100%;
+    max-width: 100%;
 }
 
-@media (макс. ширина: 600 пикселей) {
+@media (max-width: 600px) {
     .news-content2 {
-        гибкое направление: обратный столбец;
+        flex-direction: column-reverse;
     }
 }
 
@@ -1232,27 +1232,27 @@
 
 
 
-/* Р'РёРѕРіСЂР°С„РёСЏ "Можно" */
+/* Биография "Обо мне" */
 .news-item2 {
-    дисплей: гибкий;
-    выровнять-элементы: гибкий старт;
-    поле внизу: 20 пикселей;
-    цвет фона: #fff;
-    радиус границы: 10 пикселей;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px; 
+    background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    отступ: 20 пикселей;
+    padding: 20px;
 }
 
 
 
-/* РњРµХР°-НР°РїСЂРѕСЃ РґР»СЏ РјРѕР±РёР»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІ */
-@media (максимальная ширина: 700 пикселей) {
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 700px) {
     .news-item2 .project__title2 {
-        размер шрифта: 30 пикселей; /* Р°Р·РјРµСЂ СЪСЂРёСЄС‚Р° РґР»СЏ РјРѕР±Р»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІ */
+        font-size: 30px; /* Размер шрифта для мобильных устройств */
     }
 
     .news-item2 .news-text2 {
-        размер шрифта: 30 пикселей; /* Р°Р·РјРµСЂ СЪСЂРёСЄС‚Р° РґР»СЏ РјРѕР±Р»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІ */
+        font-size: 30px; /* Размер шрифта для мобильных устройств */
     }
 }
 
@@ -1262,24 +1262,24 @@
 
 
 
-/* РЎРѕР·ХР°РµРј СЃС‚РёР»СЊ news-text3 Р'Р˜РћР'Р РђР¤Р˜РЇ РќРђ РЪАђР'РћР™ */
+/* Создаем стиль news-text3 БИОГРАФИЯ НА ГЛАВНОЙ */
 .news-content2 {
-    дисплей: гибкий;
-    гибкое направление: столбец;
+    display: flex;
+    flex-direction: column;
 }
 
 .news-text3 {
-    вес шрифта: 400;
-    размер шрифта: 16 пикселей;
-    высота строки: 1,5;
-    цвет: #000000;
-    нижнее поле: 10 пикселей;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 10px;
 }
 
-@media (макс. ширина: 600 пикселей) {
+@media (max-width: 600px) {
     .news-content2 {
-        дисплей: гибкий;
-        гибкое направление: обратный столбец;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
    
@@ -1289,50 +1289,50 @@
 
 
 
-/* Сообщение об ошибке .news-item2 */
+/* Обновленные стили для .news-item2 */
 .news-item2 {
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    выровнять-элементы: по центру;
-    поле внизу: 20 пикселей;
-    цвет фона: #fff;
-    радиус границы: 10 пикселей;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; 
+    background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    отступ: 20 пикселей;
+    padding: 20px;
   }
   
-/* Сообщение об ошибке .news-item2 */
+/* Обновленные стили для .news-item2 */
 .news-item2 {
-    дисплей: гибкий;
-    выровнять-элементы: по центру;
-    поле внизу: 20 пикселей;
-    цвет фона: #fff;
-    радиус границы: 10 пикселей;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+    background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    отступ: 20 пикселей;
+    padding: 20px;
   }
   
-  /* Ссылка .news-content2 */
+  /* Стили для .news-content2 */
   .news-content2 {
-    выравнивание текста: по левому краю;
+    text-align: left;
   }
   
-  /* Размер-Нет размера 600px */
-  @media (минимальная ширина: 800 пикселей) {
+  /* Медиа-запрос для экранов шире 600px */
+  @media (min-width: 800px) {
     .news-item2 {
-      гибкое направление: строка;
+      flex-direction: row;
       
-      оправдание-содержание: пространство между;
+      justify-content: space-between;
     }
   
     .project__img1 {
       
-      поле справа: 20 пикселей; /* РџСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ РјРµР¶РґСѓ РєР°СЂС‚РёРЅРєРѕР№ Рё С‚РµРєСЃС‚РѕРј */
+      margin-right: 20px; /* Пространство между картинкой и текстом */
     }
   
     .news-content2 {
-      гибкий: 2;
-      выравнивание текста: по левому краю;
+      flex: 2;
+      text-align: left;
     }
   }
   
@@ -1344,84 +1344,84 @@
 
   
 
-/* Снимок с места */
-.отзывы {
-    дисплей: гибкий;
-    оправдание-содержание: пространство между;
-    flex-wrap: обертка;
-    поле: -20 пикселей;
+/* Стили для блоков с отзывами */
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin: -20px; 
 }
 
-.отзыв {
-    ширина: 350 пикселей;
-    высота: 500 пикселей;
-    цвет фона: #fff;
-    радиус границы: 10 пикселей;
-    отступ: 20 пикселей;
+.testimonial {
+    width: 350px;
+    height: 500px; 
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
     box-shadow: 0px 2px 4px rgba(5, 5, 5, 0.2);
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    выровнять-элементы: по центру;
-    поле: 20 пикселей;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
-/* РњРµРґР°-НР°Р°СЂРѕСЃ РґР»СЏ Р°РґР°РїС‚РёРІРЅРѕСЃС‚Рё РїСЂРё С€РёСЂРёРЅРµ СЌРєСЂР°РЅР° РјРµР µ 950 пикселей */
-@media (максимальная ширина: 950 пикселей) {
-    .отзыв {
-        ширина: 350 пикселей;
-        высота: 500 пикселей;
-        поле: 20 пикселей авто;
+/* Медиа-запрос для адаптивности при ширине экрана менее 950px */
+@media (max-width: 950px) {
+    .testimonial {
+        width: 350px;
+        height: 500px; 
+        margin: 20px auto; 
     }
 }
 
-/* РЎС‚РёР»Рё РґР»СЏ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ, РёРјРμРЅРё Рё РёРЅС™РѕСЂРјС†РёРё РІРЅСѓС‚СЂРё Р±Р»РѕР° Р ѕС‚Р·С‹Р° (РјРѕР¶РµС ‚Рµ РѕСЃС‚Р°РІРёС‚СЊ РєР°Рє РµСЃС‚СЊ) */
+/* Стили для изображения, имени и информации внутри блока отзыва (можете оставить как есть) */
 .testimonial__image img {
-    ширина: 100%;
-    граница-радиус: 50%;
-    поле внизу: 5 пикселей;
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 5px;
 }
 
 .testimonial__name {
-    размер шрифта: 20 пикселей;
-    начертание шрифта: жирный;
-    поле внизу: 5 пикселей;
-    цвет фона: #ebebeb;
-    радиус границы: 10 пикселей;
-    отступы: 5 пикселей 10 пикселей;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    background-color: #ebebeb;
+    border-radius: 10px; 
+    padding: 5px 10px; 
 }
 
 .testimonial__info {
-    выравнивание текста: по центру;
+    text-align: center;
 }
 
 .testimonial__comment {
-    размер шрифта: 16 пикселей;
-    цвет: #666;
+    font-size: 16px;
+    color: #666;
 }
 
 
 
 
-.image-контейнер {
-    курсор: указатель;
+.image-container {
+    cursor: pointer;
 }
 
-.image-контейнер img {
-    максимальная ширина: 100%;
-    максимальная высота: 100%;
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .image-container.fullscreen {
-    положение: фиксированное;
-    верх: 0;
-    слева: 0;
-    ширина: 100%;
-    высота: 100%;
-    z-индекс: 999;
-    цвет фона: rgba(0, 0, 0, 0,9);
-    дисплей: гибкий;
-    оправдание-содержание: центр;
-    выровнять-элементы: по центру;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -1433,240 +1433,240 @@
 
 
 
-/* Нижний колонтитул */
+/* Footer */
 
 .footer {
-    маржа-верх: авто;
-    отступ: 60 пикселей 0 50 пикселей;
-    цвет фона: RGB(17, 17, 17);
-    цвет: var (--header-text);
+    margin-top: auto;
+    padding: 60px 0 50px;
+    background-color: rgb(17, 17, 17);
+    color: var(--header-text);
 }
 
 .footer__wrapper {
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    выровнять-элементы: по центру;
-    разрыв между строками: 27 пикселей;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 27px;
 }
 
-.Социальное {
-    дисплей: гибкий;
-    разрыв столбца: 30 пикселей;
-    выровнять-элементы: по центру;
+.social {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
 }
 
-/* Размер-Нет размера 600px */
-@media (макс. ширина: 600 пикселей) {
-    .Социальное {
-        разрыв столбца: 8 пикселей; /* Размер файла 8px */
+/* Медиа-запрос для экранов меньше или равно 600px */
+@media (max-width: 600px) {
+    .social {
+        column-gap: 8px; /* Устанавливаем отступ между иконками в 8px */
     }
 }
 
-.Авторские права {
-    размер шрифта: 16 пикселей;
+.copyright {
+    font-size: 16px;
 }
 
-.авторское право р + р {
-    маржа-верх: 0,5em;
+.copyright p + p {
+    margin-top: 0.5em;
 }
 
 
 
-.text-с-полем {
-    поле сверху: 30 пикселей;
-    поле внизу: 30 пикселей;
-    дисплей: гибкий;
-    оправдание-содержание: центр;
-    flex-wrap: обертка;
-    разрыв столбца: 35 пикселей;
-    разрыв между строками: 35 пикселей;
-    цвет: #000;
+.text-with-margin {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    row-gap: 35px;
+    color: #000;
   }
 
 
 
  html {
-    высота: 100%;
+    height: 100%;
   }
   
-  .centered-контейнер {
-    выравнивание текста: по центру;
+  .centered-container {
+    text-align: center;
   }
   
         
      
   
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display= менять");
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
   html {
-    размер коробки: граница-коробка;
-    высота: 100%;
+    box-sizing: border-box;
+    height: 100%;
   }
   
   *,
-  *::после,
-  *::до {
-    размер коробки: наследовать;
+  *::after,
+  *::before {
+    box-sizing: inherit;
   }
   
-  тело {
-    дисплей: гибкий;
-    гибкое направление: столбец;
-    семейство шрифтов: «Робото», без засечек;
-    размер шрифта: 16 пикселей;
-    высота строки: 1,2;
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
     
   }
   
-  .контейнер {
-    ширина: 100%;
-    максимальная ширина: 1170 пикселей;
-    маржа: 0 авто;
-    высота: 100%;
-    отступ: 0 15 пикселей;
+  .container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 15px;
   }
   
   .navbar {
-    положение: фиксированное;
-    слева: 0;
-    верх: 0;
-    ширина: 100%;
-    высота: 75 пикселей;
-    фон: #222222;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background: #222222;
   }
   
   .navbar__wrap {
-    дисплей: гибкий;
-    оправдание-содержание: пространство между;
-    высота: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
   }
   
   .hamb {
-    дисплей: нет;
+    display: none;
   }
   
-  .неожиданно возникнуть {
-    дисплей: нет;
+  .popup {
+    display: none;
   }
   
   .logo {
-    текстовое оформление: нет;
-    цвет: #fff;
-    размер шрифта: 20 пикселей;
-    начертание шрифта: жирный;
-    преобразование текста: верхний регистр;
-    дисплей: гибкий;
-    выровнять-элементы: по центру;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
   }
   
-  .menu > li > а {
-    текстовое оформление: нет;
+  .menu > li > a {
+    text-decoration: none;
   }
   
   .navbar__wrap .menu {
-    дисплей: гибкий;
+    display: flex;
   }
   
   .navbar__wrap .menu > li {
-    дисплей: гибкий;
-    выровнять-элементы: растянуть;
+    display: flex;
+    align-items: stretch;
   }
   
   .navbar__wrap .menu > li > a {
-    дисплей: гибкий;
-    выровнять-элементы: по центру;
-    отступ: 0 10 пикселей;
-    цвет: rgba(255, 255, 255, 0,7);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: rgba(255, 255, 255, 0.7);
   }
   
   .navbar__wrap .menu > li > a:hover {
-    цвет: #ffb62f;
+    color: #ffb62f;
   }
 
 
-  @media (максимальная ширина: 1170 пикселей) {
+  @media (max-width: 1170px) {
     .navbar__wrap .menu {
-      дисплей: нет;
+      display: none;
     }
   
     .hamb {
-      дисплей: гибкий;
-      выровнять-элементы: по центру;
+      display: flex;
+      align-items: center;
     }
   
     .hamb__field {
-      отступ: 10 пикселей 20 пикселей;
-      курсор: указатель;
+      padding: 10px 20px;
+      cursor: pointer;
     }
   
-    .бар {
-      дисплей: блок;
-      ширина: 30 пикселей;
-      высота: 3 пикселя;
-      поле: 6 пикселей авто;
-      цвет фона: #fff;
-      переход: 0,2 с;
+    .bar {
+      display: block;
+      width: 30px;
+      height: 3px;
+      margin: 6px auto;
+      background-color: #fff;
+      transition: 0.2s;
     }
   
-    .неожиданно возникнуть {
-      положение: фиксированное;
-      верх: 75 пикселей;
-      слева: -100%;
-      ширина: 100%;
-      высота: 100%;
-      цвет фона: #fff;
-      z-индекс: 100;
-      дисплей: гибкий;
-      переход: 0,3 с;
+    .popup {
+      position: fixed;
+      top: 75px;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 100;
+      display: flex;
+      transition: 0.3s;
     }
   
     .popup.open {
-      слева: 0;
+      left: 0;
     }
   
-    .всплывающее меню {
-      ширина: 100%;
-      высота: 100%;
-      дисплей: гибкий;
-      гибкое направление: столбец;
-      выровнять-элементы: по центру;
-      оправдание-содержание: начало;
-      отступ: 50 пикселей 0;
-      переполнение: авто;
+    .popup .menu {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      padding: 50px 0;
+      overflow: auto;
     }
   
     .popup .menu > li {
-      ширина: 100%;
+      width: 100%;
     }
   
-    .popup .menu > li > а {
-      ширина: 100%;
-      дисплей: гибкий;
-      оправдание-содержание: центр;
-      отступ: 20 пикселей 0;
-      размер шрифта: 20 пикселей;
-      начертание шрифта: жирный;
-      цвет: #3f3f3f;
+    .popup .menu > li > a {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #3f3f3f;
     }
   
     .popup .menu > li > a:hover {
-      цвет фона: rgba(77, 77, 77, 0,226);
+      background-color: rgba(77, 77, 77, 0.226);
     }
   
     .hamb__field.active .bar:nth-child(2) {
-      непрозрачность: 0;
+      opacity: 0;
     }
   
     .hamb__field.active .bar:nth-child(1) {
-      преобразование: TranslateY (8 пикселей) вращать (45 градусов);
+      transform: translateY(8px) rotate(45deg);
     }
   
     .hamb__field.active .bar:nth-child(3) {
-      преобразование: TranslateY (-8 пикселей) Rotate (-45 градусов);
+      transform: translateY(-8px) rotate(-45deg);
     }
   
     body.noscroll {
-      переполнение: скрыто;
+      overflow: hidden;
     }
   }
 
